@@ -7,40 +7,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <style>
+        :root {
+            --accent-color: #002147; /* Deep navy blue */
+        }
         body {
             font-family: Arial, sans-serif;
-            color: #000;
+            color: #333;
             background-color: #fff;
             line-height: 1.8;
         }
         .bg-light {
-            background-color: #f8f8f8 !important;
+            background-color: #f8f9fa !important;
         }
         .btn-primary {
-            background-color: #000;
-            border-color: #000;
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
             transition: all 0.3s ease;
         }
         .btn-primary:hover {
-            background-color: #333;
-            border-color: #333;
+            background-color: #001a38;
+            border-color: #001a38;
             transform: translateY(-3px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .btn-outline-primary {
-            color: #000;
-            border-color: #000;
+            color: var(--accent-color);
+            border-color: var(--accent-color);
             transition: all 0.3s ease;
         }
         .btn-outline-primary:hover {
             color: #fff;
-            background-color: #000;
-            border-color: #000;
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
             transform: translateY(-3px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .border-bottom {
-            border-bottom: 1px solid #000 !important;
+            border-bottom: 1px solid var(--accent-color) !important;
         }
         #particles-js {
             position: fixed;
@@ -67,7 +70,7 @@
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
             transition: all 0.3s ease;
-            color: #000; /* Change icon color to black */
+            color: var(--accent-color);
         }
         .card:hover .icon-large {
             transform: scale(1.1);
@@ -80,9 +83,17 @@
         }
         h1, h2, h3, h4, h5, h6 {
             margin-bottom: 1.5rem;
+            color: var(--accent-color);
         }
         p {
             margin-bottom: 1.5rem;
+        }
+        .navbar-light .navbar-brand,
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--accent-color);
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #001a38;
         }
         .fade-in {
             opacity: 0;
@@ -181,10 +192,10 @@
                         <h3>Professionele cliëntintake</h3>
                         <p>Onze intuïtieve interface biedt cliënten een soepel en indrukwekkend intakeproces, waarbij alle nodige informatie efficiënt en veilig wordt verzameld.</p>
                         <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Gebruiksvriendelijke formulieren voor particulieren en bedrijven</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Eenvoudige documentupload en -beheer</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Geautomatiseerde bedrijfsinformatie-ophaling</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Meertalige ondersteuning voor diverse cliënten</li>
+                            <li><i class="bi bi-check-circle-fill me-2" style="color: var(--accent-color);"></i>Gebruiksvriendelijke formulieren voor particulieren en bedrijven</li>
+                            <li><i class="bi bi-check-circle-fill me-2" style="color: var(--accent-color);"></i>Eenvoudige documentupload en -beheer</li>
+                            <li><i class="bi bi-check-circle-fill me-2" style="color: var(--accent-color);"></i>Geautomatiseerde bedrijfsinformatie-ophaling</li>
+                            <li><i class="bi bi-check-circle-fill me-2" style="color: var(--accent-color);"></i>Meertalige ondersteuning voor diverse cliënten</li>
                         </ul>
                     </div>
                 </div>
@@ -233,7 +244,7 @@
                     <div class="col-md-6 mb-4 fade-in">
                         <div class="card h-100 border-0 shadow">
                             <div class="card-body">
-                                <h4><i class="bi bi-star-fill text-dark me-2"></i>Indrukwekkende eerste indruk</h4>
+                                <h4><i class="bi bi-star-fill me-2" style="color: var(--accent-color);"></i>Indrukwekkende eerste indruk</h4>
                                 <p>Toon uw technologische vooruitstrevendheid en cliëntgerichtheid vanaf het eerste contact.</p>
                             </div>
                         </div>
@@ -241,7 +252,7 @@
                     <div class="col-md-6 mb-4 fade-in">
                         <div class="card h-100 border-0 shadow">
                             <div class="card-body">
-                                <h4><i class="bi bi-emoji-smile-fill text-dark me-2"></i>Verbeterde cliënttevredenheid</h4>
+                                <h4><i class="bi bi-emoji-smile-fill me-2" style="color: var(--accent-color);"></i>Verbeterde cliënttevredenheid</h4>
                                 <p>Bied een modern, gemakkelijk intakeproces dat cliënten waarderen en aanbeveelt aan anderen.</p>
                             </div>
                         </div>
@@ -249,7 +260,7 @@
                     <div class="col-md-6 mb-4 fade-in">
                         <div class="card h-100 border-0 shadow">
                             <div class="card-body">
-                                <h4><i class="bi bi-graph-up text-dark me-2"></i>Verhoogde efficiëntie</h4>
+                                <h4><i class="bi bi-graph-up me-2" style="color: var(--accent-color);"></i>Verhoogde efficiëntie</h4>
                                 <p>Verkort de intaketijd aanzienlijk en start sneller met de daadwerkelijke juridische dienstverlening.</p>
                             </div>
                         </div>
@@ -257,7 +268,7 @@
                     <div class="col-md-6 mb-4 fade-in">
                         <div class="card h-100 border-0 shadow">
                             <div class="card-body">
-                                <h4><i class="bi bi-chat-dots-fill text-dark me-2"></i>Duidelijke communicatie</h4>
+                                <h4><i class="bi bi-chat-dots-fill me-2" style="color: var(--accent-color);"></i>Duidelijke communicatie</h4>
                                 <p>Houd cliënten op de hoogte van elke stap in het proces, wat vertrouwen en transparantie bevordert.</p>
                             </div>
                         </div>
