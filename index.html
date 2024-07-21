@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MijnCliënt - Excellente cliëntervaring voor advocatenkantoren</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #000;
+            background-color: #fff;
+            line-height: 1.8;
+        }
+        .bg-light {
+            background-color: #f8f8f8 !important;
+        }
+        .btn-primary {
+            background-color: #000;
+            border-color: #000;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #333;
+            border-color: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .btn-outline-primary {
+            color: #000;
+            border-color: #000;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-primary:hover {
+            color: #fff;
+            background-color: #000;
+            border-color: #000;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .border-bottom {
+            border-bottom: 1px solid #000 !important;
+        }
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+        .icon-large {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .card:hover .icon-large {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 5rem 0;
+        }
+        .container {
+            max-width: 1140px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 1.5rem;
+        }
+        p {
+            margin-bottom: 1.5rem;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">MijnCliënt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#functies">Functies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#voordelen">Voordelen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="py-5 text-center">
+            <div class="container">
+                <h1 class="display-4 mb-4 fade-in">Excellente cliëntervaring</br> vanaf het eerste contact</h1>
+                <a href="#" class="btn btn-primary btn-lg shadow px-5 py-3 fade-in" style="margin-top: 50px">Start gratis proef</a>
+            </div>
+        </header>
+
+        <section id="uitdagingen" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 fade-in">Uitdagingen van traditionele cliëntintake</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-clock icon-large text-primary"></i>
+                                <h3 class="h4">Tijdrovend proces</h3>
+                                <p>Handmatige gegevensinvoer en documentverwerking creëren onnodige vertragingen en frustratie bij cliënten.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-shuffle icon-large text-primary"></i>
+                                <h3 class="h4">Inconsistente ervaring</h3>
+                                <p>Gebrek aan gestandaardiseerde processen leidt tot wisselende kwaliteit in cliëntcommunicatie en service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-x-circle icon-large text-primary"></i>
+                                <h3 class="h4">Gemiste kansen</h3>
+                                <p>Inefficiënte intake belemmert snelle respons en kan leiden tot het mislopen van potentiële cliënten.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="oplossing" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 fade-in">MijnCliënt: Uw partner voor een uitzonderlijke cliëntervaring</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 fade-in">
+                        <img src="screenshot.png" alt="MijnCliënt Dashboard" class="img-fluid shadow rounded float-animation">
+                    </div>
+                    <div class="col-md-6 mb-4 fade-in">
+                        <h3>Professionele cliëntintake</h3>
+                        <p>Onze intuïtieve interface biedt cliënten een soepel en indrukwekkend intakeproces, waarbij alle nodige informatie efficiënt en veilig wordt verzameld.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Gebruiksvriendelijke formulieren voor particulieren en bedrijven</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Eenvoudige documentupload en -beheer</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Geautomatiseerde bedrijfsinformatie-ophaling</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Meertalige ondersteuning voor diverse cliënten</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="functies" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 fade-in">Functies die de cliëntervaring verbeteren</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-shield-check icon-large text-primary"></i>
+                                <h4>Snelle conflictcontroles</h4>
+                                <p>Voorkom vertraging en toon professionaliteit met onmiddellijke, geautomatiseerde conflictcontroles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-pen icon-large text-primary"></i>
+                                <h4>Digitale documentondertekening</h4>
+                                <p>Bespaar tijd en bied gemak met veilige e-handtekeningen en aanpasbare documentsjablonen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body text-center p-5">
+                                <i class="bi bi-laptop icon-large text-primary"></i>
+                                <h4>Cliëntportaal</h4>
+                                <p>Bied cliënten 24/7 toegang tot hun documenten en intake-voortgang via een beveiligd portaal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="voordelen" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 fade-in">Voordelen voor uw advocatenkantoor en cliënten</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body">
+                                <h4><i class="bi bi-star-fill text-warning me-2"></i>Indrukwekkende eerste indruk</h4>
+                                <p>Toon uw technologische vooruitstrevendheid en cliëntgerichtheid vanaf het eerste contact.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body">
+                                <h4><i class="bi bi-emoji-smile-fill text-success me-2"></i>Verbeterde cliënttevredenheid</h4>
+                                <p>Bied een modern, gemakkelijk intakeproces dat cliënten waarderen en aanbeveelt aan anderen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body">
+                                <h4><i class="bi bi-graph-up text-primary me-2"></i>Verhoogde efficiëntie</h4>
+                                <p>Verkort de intaketijd aanzienlijk en start sneller met de daadwerkelijke juridische dienstverlening.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 fade-in">
+                        <div class="card h-100 border-0 shadow">
+                            <div class="card-body">
+                                <h4><i class="bi bi-chat-dots-fill text-info me-2"></i>Duidelijke communicatie</h4>
+                                <p>Houd cliënten op de hoogte van elke stap in het proces, wat vertrouwen en transparantie bevordert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="py-5 bg-light text-center">
+            <div class="container">
+                <h2 class="mb-4 fade-in">Klaar om uw cliëntervaring naar een hoger niveau te tillen?</h2>
+                <p class="lead mb-4 fade-in">Sluit u aan bij toonaangevende advocatenkantoren die MijnCliënt gebruiken om cliënten te imponeren vanaf het eerste contact.</p>
+                <a href="#" class="btn btn-primary btn-lg me-3 shadow px-5 py-3 fade-in"><i class="bi bi-play-fill me-2"></i>Start gratis proef</a>
+                <a href="#" class="btn btn-outline-primary btn-lg shadow px-5 py-3 fade-in"><i class="bi bi-calendar-event me-2"></i>Vraag demo aan</a>
+            </div>
+        </section>
+
+        <footer id="contact" class="py-4 bg-dark text-white text-center">
+            <div class="container">
+                <p>&copy; 2024 MijnCliënt. Alle rechten voorbehouden.</p>
+                <p>Contacteer ons: <a href="mailto:info@mijnclient.be" class="text-white"><i class="bi bi-envelope me-2"></i>info@mijnclient.be</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 50,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#000000"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                },
+                "opacity": {
+                    "value": 0.1,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#000000",
+                    "opacity": 0.2,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+        // Fade-in animation
+        function fadeInElement(element) {
+            var rect = element.getBoundingClientRect();
+            var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+            if (rect.top <= viewHeight && rect.bottom >= 0) {
+                element.classList.add('visible');
+            }
+        }
+
+        function handleScrollAnimation() {
+            var fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(function(element) {
+                fadeInElement(element);
+            });
+        }
+
+        // Initial check on load
+        window.addEventListener('load', handleScrollAnimation);
+
+        // Check on scroll
+        window.addEventListener('scroll', handleScrollAnimation);
+    </script>
+</body>
+</html>
